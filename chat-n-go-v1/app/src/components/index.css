@@ -1,0 +1,124 @@
+/* This page is desktop first as it is not designed with mobile devices in mind */
+
+:root {
+    --sk-color: coral!important;
+}
+
+*::-webkit-scrollbar,
+*::-webkit-scrollbar-thumb {
+    width: 1vw;
+    border-radius: 13px;
+    color: gray;
+}
+
+*::-webkit-scrollbar-thumb {
+    box-shadow: inset 0 0 0 10px;
+}
+
+.avatar {
+    width: 3vw;
+    margin-left: 0.5vw;
+    margin-top: 0.5vw;
+    display: inline-block;
+}
+
+.message {
+    color: #ffffff;
+    padding: 0.72vw;
+    font-size: 1vw;
+    line-height: 2.44vw;
+}
+
+.message-left {
+    border-radius: 0 0.7vw 0.7vw;
+    margin-left: 0.5vw;
+    position: relative;
+    bottom: 1vw;
+    background-image: linear-gradient(#D53369, #DAAE51);
+}
+
+.message-right {
+    border-radius: 0.7vw 0.7vw 0 0.7vw;
+    float: right;
+    margin-right: 0.5vw;
+    background-image: linear-gradient(#33D59F, #517DDA);
+}
+
+.time, .sender {
+    font-size: 0.72vw;
+    opacity: 0.9;
+}
+
+.sender {
+    margin-left: 0.5vw;
+    width: 3vw;
+    text-align: center;
+}
+
+.message-spacing-container, .message-container {
+    min-width: 100%;
+    max-width: 100%;
+}
+
+.message-spacing-container {
+    min-height: 6vw;
+}
+
+.message-container {
+    min-height: 6vw;
+}
+
+.send-message-form {
+    position: fixed;
+    bottom: 0;
+    left: calc(50vw / 6);
+    margin-bottom: 1rem;
+}
+
+.send-message-form input {
+    width: calc(500vw / 6 - 6vw);
+    border: none;
+    background-color: #e4e4e4;
+    border-radius: 3vw;
+    padding: 1rem 1rem 1rem 1.5rem;
+}
+
+.send-message-form .material-icons {
+    background: none;
+    border: none;
+    font-size: 2vw !important;
+    vertical-align: middle;
+    position: relative;
+    right: 6vw;
+    margin: 0;
+    padding: 0.25vw;
+}
+
+#loading-message-1 {
+    animation-name: fade;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-fill-mode: both;
+}
+
+
+#loading-message-2 {
+    animation-name: fade;
+    animation-duration: 1s;
+    animation-delay: 3s;
+    animation-fill-mode: both;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 100%;
+    }
+}
+
+@media screen and (max-width: 320px) {
+
+}
